@@ -1,0 +1,13 @@
+---
+title: "Gapminder Dataset"
+---
+
+This is a Quarto website.
+
+The gapminder dataset contains information about the life expectancy, population, and GDP per capita for 142 countries.
+
+[Link](life-gdp.qmd)
+[Link](life-population.qmd)
+[Link](country.qmd)
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.

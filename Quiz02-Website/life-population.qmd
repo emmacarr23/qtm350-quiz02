@@ -1,0 +1,15 @@
+---
+title: 'Life Expectancy and Population'
+jupyter: python3
+---
+
+This graph displays the relationship between life expectancy (years) and Population (millions)
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gapminder_df = pd.read_csv('gapminder.csv')
+
+plt.scatter(gapminder_df['life_expectancy'], gapminder_df['population_millions'])
+plt.show()
+```

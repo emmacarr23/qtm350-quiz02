@@ -1,0 +1,25 @@
+---
+title: 'Life Expectancy and Population'
+jupyter: python3
+---
+
+These graphs display the relationship for life expectancy (1), GDP per capita (2), and population over time (3)
+```{python}
+import matplotlib.pyplot as plt
+import pandas as pd
+
+gapminder_df = pd.read_csv('gapminder.csv')
+country_df = gapminder_df.loc[gapminder_df['country']=='Afghanistan']
+
+plt.scatter(country_df['year'], country_df['life_expectancy'])
+plt.show()
+
+plt.scatter(country_df['year'], country_df['gdp_per_capita'])
+plt.show()
+
+plt.scatter(country_df['year'], country_df['population_millions'])
+plt.show()
+
+
+
+```
